@@ -30,17 +30,19 @@ event listener for the `click` event on the `input#input` element in
 Try out the following in the Chrome DevTools console:
 
 ```js
-const input = document.getElementById('input');
-input.addEventListener('click', function() {
-  alert('I was clicked!');
-});
-```
-
+ 
 Now when you click inside of `input#input`, you will get an alert box.
 
 Let's review what's happening in this code.
 
-First, we grab the element that we want to add the event listener to and save a
+First, we grabfunction addingEventListener() {
+    const input = document.getElementById('input')
+    input.addEventListener('click', function() {
+      alert('I was clicked!')
+    })
+  }
+  
+ the element that we want to add the event listener to and save a
 reference to it in the `input` variable.
 
 Next, we call `addEventListener()` on that element to tell JavaScript to listen
